@@ -23,6 +23,10 @@ using namespace std;
 using namespace cv;
 
 int main(int argc, char *argv[]) {
+	if(argc < 5){
+		cout << "USAGE: " <<argv[0] << " <Top X> <Top Y> <Width> <Height> " << endl;
+		return 1;
+	}
 	int top_x = stoi(argv[2]);
 	int top_y = stoi(argv[3]);
 	int width = stoi(argv[4]);
